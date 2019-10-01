@@ -17,7 +17,6 @@ DallasTemperature sensors(&oneWire);
 
 float Temperatures[NSENSORS];
 
-
 void DS18setup(void) 
 { 
     sensors.begin(); 
@@ -26,9 +25,9 @@ void DS18setup(void)
 
 float* readDS18(void) 
 { 
-
  sensors.requestTemperatures(); // Send the command to get temperature readings 
- for (int i=0; i<NSENSORS;i++) Temperatures[i]= sensors.getTempCByIndex(i);
+ for (int i=0; i<NSENSORS;i++)
+     Temperatures[i]= sensors.getTempCByIndex(i);
  return Temperatures;
 /********************************************************************/
 
