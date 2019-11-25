@@ -149,8 +149,8 @@
 #endif
 
 // Pins to focuser2 stepper driver
-#define Axis5DirPin   33    // Pin 33 (Dir)
-#define Axis5StepPin  30    // Pin 30 (Step)
+#define Axis5DirPin   37    // Pin 37 (Dir)
+#define Axis5StepPin  36    // Pin 36 (Step)
 
 // ST4 interface
 #define ST4RAw        24    // Pin 24 ST4 RA- West
@@ -158,8 +158,10 @@
 #define ST4DEn        26    // Pin 26 ST4 DE+ North
 #define ST4RAe        27    // Pin 27 ST4 RA+ East
 
+//Temperatura
+#define DS18Pin       38    // Pin 38 Temperature DS18B20
+
 #else
 #error "Wrong processor for this configuration!"
 
 #endif
-
